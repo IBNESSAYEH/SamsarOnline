@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Autority;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreAutorityRequest;
+use App\Http\Requests\UpdateAutorityRequest;
 
 class AutorityController extends Controller
 {
@@ -30,10 +31,10 @@ class AutorityController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreAutorityRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreAutorityRequest $request)
     {
         //
     }
@@ -63,11 +64,11 @@ class AutorityController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateAutorityRequest  $request
      * @param  \App\Models\Autority  $autority
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Autority $autority)
+    public function update(UpdateAutorityRequest $request, Autority $autority)
     {
         //
     }

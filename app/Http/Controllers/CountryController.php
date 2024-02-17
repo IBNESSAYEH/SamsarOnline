@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Country;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreCountryRequest;
+use App\Http\Requests\UpdateCountryRequest;
 
 class CountryController extends Controller
 {
@@ -30,10 +31,10 @@ class CountryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreCountryRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCountryRequest $request)
     {
         //
     }
@@ -63,11 +64,11 @@ class CountryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateCountryRequest  $request
      * @param  \App\Models\Country  $country
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Country $country)
+    public function update(UpdateCountryRequest $request, Country $country)
     {
         //
     }

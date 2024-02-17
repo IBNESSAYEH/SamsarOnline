@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\City;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreCityRequest;
+use App\Http\Requests\UpdateCityRequest;
 
 class CityController extends Controller
 {
@@ -30,10 +31,10 @@ class CityController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreCityRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCityRequest $request)
     {
         //
     }
@@ -63,11 +64,11 @@ class CityController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateCityRequest  $request
      * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, City $city)
+    public function update(UpdateCityRequest $request, City $city)
     {
         //
     }

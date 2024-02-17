@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Image;
-use Illuminate\Http\Request;
+use App\Http\Requests\StoreImageRequest;
+use App\Http\Requests\UpdateImageRequest;
 
 class ImageController extends Controller
 {
@@ -30,10 +31,10 @@ class ImageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreImageRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreImageRequest $request)
     {
         //
     }
@@ -63,11 +64,11 @@ class ImageController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\UpdateImageRequest  $request
      * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Image $image)
+    public function update(UpdateImageRequest $request, Image $image)
     {
         //
     }
