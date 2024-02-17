@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Caracteristique extends Model
+class UserAutority extends Model
 {
     use HasFactory;
 
-    public function annonce(){
-        return $this->belongsTo(Annonce::class);
-    }
+    protected $table = 'user_autority';
 }
