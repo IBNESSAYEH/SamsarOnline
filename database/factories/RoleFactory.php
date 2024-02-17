@@ -16,8 +16,10 @@ class RoleFactory extends Factory
      */
     public function definition()
     {
+        $roles = ['Admin', 'User', 'Editor', 'Manager']; // Define your list of roles
+
         return [
-            //
+            'name' => $this->faker->unique()->randomElement($roles), // Randomly select a role from the list
         ];
     }
 }
