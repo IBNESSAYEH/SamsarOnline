@@ -17,7 +17,8 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'image' => $this->faker->imageUrl(), // Generate a fake image URL
+            'annonce_id' =>  $this->faker->numberBetween(1, 20),
         ];
     }
 }

@@ -17,7 +17,9 @@ class CommentFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'contenu' => $this->faker->paragraph, // Generate a fake content
+            'user_id' => $this->faker->numberBetween(1, 10), // Assuming you have 10 users
+            'annonce_id' => $this->faker->numberBetween(1, 20),
         ];
     }
 }

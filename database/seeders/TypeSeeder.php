@@ -14,6 +14,6 @@ class TypeSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Type::factory(10)->create();
     }
 }
