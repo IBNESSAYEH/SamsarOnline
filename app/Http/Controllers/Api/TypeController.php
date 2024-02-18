@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Caracteristique;
-use App\Http\Requests\StoreCaracteristiqueRequest;
-use App\Http\Requests\UpdateCaracteristiqueRequest;
+use App\Http\Controllers\Controller;
 
-class CaracteristiqueController extends Controller
+use App\Models\Type;
+use App\Http\Requests\StoreTypeRequest;
+use App\Http\Requests\UpdateTypeRequest;
+
+class TypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +33,10 @@ class CaracteristiqueController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCaracteristiqueRequest  $request
+     * @param  \App\Http\Requests\StoreTypeRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCaracteristiqueRequest $request)
+    public function store(StoreTypeRequest $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class CaracteristiqueController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Caracteristique  $caracteristique
+     * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function show(Caracteristique $caracteristique)
+    public function show(Type $type)
     {
         //
     }
@@ -53,10 +55,10 @@ class CaracteristiqueController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Caracteristique  $caracteristique
+     * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function edit(Caracteristique $caracteristique)
+    public function edit(Type $type)
     {
         //
     }
@@ -64,11 +66,11 @@ class CaracteristiqueController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCaracteristiqueRequest  $request
-     * @param  \App\Models\Caracteristique  $caracteristique
+     * @param  \App\Http\Requests\UpdateTypeRequest  $request
+     * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCaracteristiqueRequest $request, Caracteristique $caracteristique)
+    public function update(UpdateTypeRequest $request, Type $type)
     {
         //
     }
@@ -76,10 +78,10 @@ class CaracteristiqueController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Caracteristique  $caracteristique
+     * @param  \App\Models\Type  $type
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Caracteristique $caracteristique)
+    public function destroy(Type $type)
     {
         //
     }

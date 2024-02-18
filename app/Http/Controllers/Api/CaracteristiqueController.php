@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Autority;
-use App\Http\Requests\StoreAutorityRequest;
-use App\Http\Requests\UpdateAutorityRequest;
+use App\Http\Controllers\Controller;
 
-class AutorityController extends Controller
+use App\Models\Caracteristique;
+use App\Http\Requests\StoreCaracteristiqueRequest;
+use App\Http\Requests\UpdateCaracteristiqueRequest;
+
+class CaracteristiqueController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +33,10 @@ class AutorityController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreAutorityRequest  $request
+     * @param  \App\Http\Requests\StoreCaracteristiqueRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreAutorityRequest $request)
+    public function store(StoreCaracteristiqueRequest $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class AutorityController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Autority  $autority
+     * @param  \App\Models\Caracteristique  $caracteristique
      * @return \Illuminate\Http\Response
      */
-    public function show(Autority $autority)
+    public function show(Caracteristique $caracteristique)
     {
         //
     }
@@ -53,10 +55,10 @@ class AutorityController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Autority  $autority
+     * @param  \App\Models\Caracteristique  $caracteristique
      * @return \Illuminate\Http\Response
      */
-    public function edit(Autority $autority)
+    public function edit(Caracteristique $caracteristique)
     {
         //
     }
@@ -64,11 +66,11 @@ class AutorityController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateAutorityRequest  $request
-     * @param  \App\Models\Autority  $autority
+     * @param  \App\Http\Requests\UpdateCaracteristiqueRequest  $request
+     * @param  \App\Models\Caracteristique  $caracteristique
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateAutorityRequest $request, Autority $autority)
+    public function update(UpdateCaracteristiqueRequest $request, Caracteristique $caracteristique)
     {
         //
     }
@@ -76,10 +78,10 @@ class AutorityController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Autority  $autority
+     * @param  \App\Models\Caracteristique  $caracteristique
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Autority $autority)
+    public function destroy(Caracteristique $caracteristique)
     {
         //
     }

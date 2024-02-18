@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\City;
-use App\Http\Requests\StoreCityRequest;
-use App\Http\Requests\UpdateCityRequest;
+use App\Http\Controllers\Controller;
 
-class CityController extends Controller
+use App\Models\Video;
+use App\Http\Requests\StoreVideoRequest;
+use App\Http\Requests\UpdateVideoRequest;
+
+class VideoController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +33,10 @@ class CityController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCityRequest  $request
+     * @param  \App\Http\Requests\StoreVideoRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCityRequest $request)
+    public function store(StoreVideoRequest $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class CityController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\City  $city
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function show(City $city)
+    public function show(Video $video)
     {
         //
     }
@@ -53,10 +55,10 @@ class CityController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\City  $city
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function edit(City $city)
+    public function edit(Video $video)
     {
         //
     }
@@ -64,11 +66,11 @@ class CityController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCityRequest  $request
-     * @param  \App\Models\City  $city
+     * @param  \App\Http\Requests\UpdateVideoRequest  $request
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCityRequest $request, City $city)
+    public function update(UpdateVideoRequest $request, Video $video)
     {
         //
     }
@@ -76,10 +78,10 @@ class CityController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\City  $city
+     * @param  \App\Models\Video  $video
      * @return \Illuminate\Http\Response
      */
-    public function destroy(City $city)
+    public function destroy(Video $video)
     {
         //
     }

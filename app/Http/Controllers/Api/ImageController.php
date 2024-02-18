@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Video;
-use App\Http\Requests\StoreVideoRequest;
-use App\Http\Requests\UpdateVideoRequest;
+use App\Http\Controllers\Controller;
 
-class VideoController extends Controller
+use App\Models\Image;
+use App\Http\Requests\StoreImageRequest;
+use App\Http\Requests\UpdateImageRequest;
+
+class ImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +33,10 @@ class VideoController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreVideoRequest  $request
+     * @param  \App\Http\Requests\StoreImageRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreVideoRequest $request)
+    public function store(StoreImageRequest $request)
     {
         //
     }
@@ -42,10 +44,10 @@ class VideoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Video  $video
+     * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function show(Video $video)
+    public function show(Image $image)
     {
         //
     }
@@ -53,10 +55,10 @@ class VideoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Video  $video
+     * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function edit(Video $video)
+    public function edit(Image $image)
     {
         //
     }
@@ -64,11 +66,11 @@ class VideoController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateVideoRequest  $request
-     * @param  \App\Models\Video  $video
+     * @param  \App\Http\Requests\UpdateImageRequest  $request
+     * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateVideoRequest $request, Video $video)
+    public function update(UpdateImageRequest $request, Image $image)
     {
         //
     }
@@ -76,10 +78,10 @@ class VideoController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Video  $video
+     * @param  \App\Models\Image  $image
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Video $video)
+    public function destroy(Image $image)
     {
         //
     }

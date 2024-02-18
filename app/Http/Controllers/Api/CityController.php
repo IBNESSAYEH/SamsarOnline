@@ -1,11 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Annonce;
-use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
-class AnnonceController extends Controller
+use App\Models\City;
+use App\Http\Requests\StoreCityRequest;
+use App\Http\Requests\UpdateCityRequest;
+
+class CityController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -30,10 +33,10 @@ class AnnonceController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Http\Requests\StoreCityRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreCityRequest $request)
     {
         //
     }
@@ -41,10 +44,10 @@ class AnnonceController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Annonce  $annonce
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function show(Annonce $annonce)
+    public function show(City $city)
     {
         //
     }
@@ -52,10 +55,10 @@ class AnnonceController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Annonce  $annonce
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function edit(Annonce $annonce)
+    public function edit(City $city)
     {
         //
     }
@@ -63,11 +66,11 @@ class AnnonceController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Annonce  $annonce
+     * @param  \App\Http\Requests\UpdateCityRequest  $request
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Annonce $annonce)
+    public function update(UpdateCityRequest $request, City $city)
     {
         //
     }
@@ -75,10 +78,10 @@ class AnnonceController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Annonce  $annonce
+     * @param  \App\Models\City  $city
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Annonce $annonce)
+    public function destroy(City $city)
     {
         //
     }

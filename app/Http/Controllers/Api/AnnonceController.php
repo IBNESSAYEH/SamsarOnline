@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
-use App\Models\Country;
-use App\Http\Requests\StoreCountryRequest;
-use App\Http\Requests\UpdateCountryRequest;
+use App\Http\Controllers\Controller;
+use App\Models\Annonce;
+use Illuminate\Http\Request;
 
-class CountryController extends Controller
+class AnnonceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -31,10 +31,10 @@ class CountryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreCountryRequest  $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCountryRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -42,10 +42,10 @@ class CountryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Annonce  $annonce
      * @return \Illuminate\Http\Response
      */
-    public function show(Country $country)
+    public function show(Annonce $annonce)
     {
         //
     }
@@ -53,10 +53,10 @@ class CountryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Annonce  $annonce
      * @return \Illuminate\Http\Response
      */
-    public function edit(Country $country)
+    public function edit(Annonce $annonce)
     {
         //
     }
@@ -64,11 +64,11 @@ class CountryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateCountryRequest  $request
-     * @param  \App\Models\Country  $country
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\Annonce  $annonce
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCountryRequest $request, Country $country)
+    public function update(Request $request, Annonce $annonce)
     {
         //
     }
@@ -76,10 +76,10 @@ class CountryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Country  $country
+     * @param  \App\Models\Annonce  $annonce
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Country $country)
+    public function destroy(Annonce $annonce)
     {
         //
     }
