@@ -45,9 +45,9 @@ class AnnonceController extends Controller
      * @param  \App\Models\Annonce  $annonce
      * @return \Illuminate\Http\Response
      */
-    public function show(Annonce $annonce)
+    public function show($id)
     {
-        //
+        return response()->json([]);
     }
 
     /**
