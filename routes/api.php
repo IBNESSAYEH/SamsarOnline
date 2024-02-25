@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Api\AnnonceController;
+use App\Http\Controllers\Api\ApiAuthController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('SamsarOnline')->name('Annonce.')->namespace("App\Http\Controllers\Api")->group(function(){
-    Route::apiResource('annonce',AnnonceController::class);
-});
+Route::post("/login", [ApiAuthController::class, "login"]);
+Route::post("/register", [ApiAuthController::class, "register"]);
