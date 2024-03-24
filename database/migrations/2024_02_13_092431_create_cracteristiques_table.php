@@ -15,17 +15,17 @@ return new class extends Migration
     {
         Schema::create('cracteristiques', function (Blueprint $table) {
             $table->id();
-            $table->integer("etage");
-            $table->integer("surface");
-            $table->integer("number_rooms");
-            $table->integer("number_salle");
-            $table->integer("number_salle_bain");
-            $table->boolean("assenceur");
-            $table->boolean("balcon");
-            $table->boolean("terrasse");
-            $table->boolean("piscine");
-            $table->boolean("jardin");
-            $table->boolean("parking");
+            $table->integer("etage")->nullable();
+            $table->integer("surface")->nullable();
+            $table->integer("number_rooms")->nullable();
+            $table->integer("number_salle")->nullable();
+            $table->integer("number_salle_bain")->nullable();
+            $table->boolean("assenceur")->nullable();
+            $table->boolean("balcon")->nullable();
+            $table->boolean("terrasse")->nullable();
+            $table->boolean("piscine")->nullable();
+            $table->boolean("jardin")->nullable();
+            $table->boolean("parking")->nullable();
 
             $table->foreignId('annonce_id')
             ->constrained()

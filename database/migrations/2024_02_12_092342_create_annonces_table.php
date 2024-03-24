@@ -17,11 +17,12 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('description');
-            $table->timestamp('date_publication');
-            $table->timestamp('date_construction');
+            $table->timestamp('date_debut_reservation')->nullable();
+            $table->timestamp('date_fin_reservation')->nullable();
             $table->string('phone');
             $table->string('email');
             $table->string('adresse');
+            $table->integer('price')->default(0);
             $table->integer('month_price')->default(0);
             $table->integer('week_price')->default(0);
             $table->integer('day_price')->default(0);
