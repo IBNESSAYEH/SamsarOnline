@@ -18,15 +18,7 @@ class AnnonceController extends Controller
         //
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -36,7 +28,7 @@ class AnnonceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**
@@ -50,16 +42,7 @@ class AnnonceController extends Controller
         return response()->json([]);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Annonce  $annonce
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Annonce $annonce)
-    {
-        //
-    }
+
 
     /**
      * Update the specified resource in storage.
